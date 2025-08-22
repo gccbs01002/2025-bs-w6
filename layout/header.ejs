@@ -1,21 +1,36 @@
+<nav class="navbar navbar-light border-bottom">
+  <div class="container position-relative"> <!-- 讓中間選單可絕對置中 -->
+    <!-- 左：Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="/assets/images/logo.svg" alt="logo">
 
+    </a>
 
-<footer class="bg-natural-95  ">
-    <div class="container border-top py-lg-6 py-5">
-        <div class="d-flex flex-lg-row flex-column align-items-lg-center justify-content-lg-between align-items-center">
-            <nav class="mb-lg-0 mb-2">
-                <ul class="d-flex flex-wrap align-items-center justify-content-center list-unstyled gap-5 mb-0">
-                    <li class=""><a href="plans.html" class="text-decoration-none text-dark py-2 px-lg-5 px-4">服務方案</a></li>
-                    <li class=""><a href="about.html" class="text-decoration-none text-dark py-2 px-lg-5 px-4">關於職旅</a></li>
-                    <li class=""><a href="contact.html" class="text-decoration-none text-dark py-2 px-lg-5 px-4">聯絡我們</a></li>
-                    <li class=""><a href="privacy-policy.html" class="text-decoration-none text-dark py-2 px-lg-5 px-4">隱私權政策</a></li>
-                    <li class=""><a href="terms-of-service.html" class="text-decoration-none text-dark py-2 px-lg-5 px-4">用戶條款</a></li>
-                </ul>
-            </nav>
-            
-            <div class=" py-2">
-                <p class="text-natural-50 fs-7">Copyright © 2025 職旅 workway. All rights reserved.</p>
-            </div>
-        </div>
+    <!-- 中：導覽（絕對置中，不受左右寬度影響） -->
+    <ul class="nav nav-center d-none d-lg-flex gap-4">
+      <li class="nav-item"><a class="nav-link px-0 " href="#">服務方案</a></li>
+      <li class="nav-item"><a class="nav-link px-0" href="#">關於職旅</a></li>
+      <li class="nav-item"><a class="nav-link px-0" href="#">聯絡我們</a></li>
+    </ul>
+
+    <!-- 右：使用者 -->
+    <div class="d-flex align-items-center gap-2 ms-auto">
+      <img src="/assets/images/avatar.png" class="rounded-circle" width="44" height="44" alt="avatar">
+      <span class="d-none d-sm-inline">Mokumaru</span>
     </div>
-</footer>
+
+    <!-- 行動版漢堡（可選） -->
+    <button class="navbar-toggler d-lg-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#mNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <!-- 行動版下拉菜單（小尺寸才顯示） -->
+  <div class="collapse" id="mNav">
+    <ul class="nav flex-column px-3 py-2 d-lg-none">
+      <li class="nav-item"><a class="nav-link" href="#">服務方案</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">關於職旅</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">聯絡我們</a></li>
+    </ul>
+  </div>
+</nav>
