@@ -22,3 +22,12 @@ main{flex:1}
 
 /* 確保按鈕內所有 Material Symbols 都不被行高撐開 */
 .btn .material-symbols-outlined{ line-height:1; }
+
+
+/* footer 專用樣式 */
+.site-footer {
+  padding: 2rem 0;
+  color: #666;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
