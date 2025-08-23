@@ -1,0 +1,24 @@
+.side-width{
+  @include pc{
+		width: 300px;
+	};
+}
+
+.tab-btn-bg{
+  .nav-link{
+    background-color:$white;
+  }
+}
+
+.table-pc{
+  @include mobile{
+		display: none;
+	};
+}
+
+.table-mobile{
+  display: none;
+  @include mobile{
+		display: block;
+	};
+}

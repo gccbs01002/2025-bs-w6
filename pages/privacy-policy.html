@@ -4,68 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0">
     <title>職旅-WorkWay</title>
-<link rel="stylesheet" href="../bootstrap-5.3.7-dist/css/bootstrap.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<style>
-/* 讓中間導覽「真正置中」：不被左右區塊寬度影響 */
-.nav-center{
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%,-50%); /* 保證正中央 */
-  white-space:nowrap;               /* 防止換行讓中心偏移 */
-}
-
-/* 選單字型微調 */
-.nav-link{ color:#333; }
-.nav-link:hover{ color:#0d6efd; }
-
-.bg-natural-95{
-    background-color: #F0F3F5;
-}
-
-
-.py-6 {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-.text-natural-50
-{
-    color: #667F99;
-}
-</style>
 
 
 <body>
 
-<nav class="navbar navbar-light border-bottom">
-  <div class="container position-relative"> <!-- 讓中間選單可絕對置中 -->
-    <!-- 左：Logo -->
-    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-      <img src="/assets/images/logo.svg" alt="logo">
 
-    </a>
-
-    <!-- 中：導覽（絕對置中，不受左右寬度影響） -->
-    <ul class="nav nav-center d-none d-lg-flex gap-4">
-      <li class="nav-item"><a class="nav-link px-0 " href="#">服務方案</a></li>
-      <li class="nav-item"><a class="nav-link px-0" href="#">關於職旅</a></li>
-      <li class="nav-item"><a class="nav-link px-0" href="#">聯絡我們</a></li>
-    </ul>
-
-    <!-- 右：使用者 -->
-    <div class="d-flex align-items-center gap-2 ms-auto">
-      <img src="/assets/images/avatar.png" class="rounded-circle" width="44" height="44" alt="avatar">
-      <span class="d-none d-sm-inline">Mokumaru</span>
-    </div>
-
-    <!-- 行動版漢堡（可選） -->
-    <button class="navbar-toggler d-lg-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#mNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
+<%- include('./layout/header'); -%>
 
   <!-- 行動版下拉菜單（小尺寸才顯示） -->
   <div class="collapse" id="mNav">
@@ -76,6 +22,7 @@
     </ul>
   </div>
 </nav>
+
     <main class="bg-natural-95">
         <div class="container py-lg-7 py-6">
             <div class="row justify-content-center ">
@@ -154,25 +101,8 @@
 
 
 
-<footer class="bg-natural-95">
-    <div class="container border-top py-lg-6 py-5">
-        <div class="d-flex flex-lg-row flex-column align-items-lg-center justify-content-lg-between align-items-center">
-            <nav class="mb-lg-0 mb-2">
-                <ul class="d-flex flex-wrap align-items-center justify-content-center list-unstyled ">
-                    <li class=""><a href="#" class="text-decoration-none text-dark py-2 px-lg-3 px-4 pb-lg-2">服務方案</a></li>
-                    <li class=""><a href="#" class="text-decoration-none text-dark py-2 px-lg-3 px-4 pb-lg-2">關於職旅</a></li>
-                    <li class=""><a href="#" class="text-decoration-none text-dark py-2 px-lg-3 px-4 pb-lg-2">聯絡我們</a></li>
-                    <li class=""><a href="privacy-policy.html" class="text-decoration-none text-dark py-2 px-lg-3 px-4 ">隱私權政策</a></li>
-                    <li class=""><a href="terms-of-service.html" class="text-decoration-none text-dark py-2 px-lg-3 px-4">用戶條款</a></li>
-                </ul>
-            </nav>
-            
-            <div class=" py-2">
-                <p class="text-natural-50 fs-7">Copyright © 2025 職旅 workway. All rights reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
+<%- include('./layout/footer'); -%>
+    <script type="module" src="/main.js"></script>
 <script src="../bootstrap-5.3.7-dist/js/popper.min.js"></script>
 <script src="../bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
 </body>
